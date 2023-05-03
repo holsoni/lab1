@@ -1,0 +1,8 @@
+<nav class="left-nav">
+  <p> MENU </p>
+  <ul class="nav-list">
+    <li *ngFor="let item of menu" >
+      <a (click)="menuClick(item.label)" [ngClass]="{'active': item.active}">{{item.label}}</a>
+    </li>
+  </ul>
+</nav>
